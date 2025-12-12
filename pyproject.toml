@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "html4llms"
+version = "0.1.0"
+description = "Condense DevTools outerHTML into something LLM-friendly."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+html4llms = "html4llms.cli:main"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.19.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["html4llms"]
