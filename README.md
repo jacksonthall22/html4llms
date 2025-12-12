@@ -6,6 +6,8 @@ Small helper to shrink noisy `outerHTML` copied from DevTools into something LLM
 - hides script/style bodies
 - pretty-prints structure
 
+![Context menu in Chrome DevTools showing Copy outerHTML option](img.png)
+
 ## Install
 Build a wheel with `uv build`, then install the CLI locally (this creates the `html4llms` command):
 ```commandline
